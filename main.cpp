@@ -25,14 +25,19 @@ double* parseImage(string filename) {
     fileInputs >> IMAGE_HEIGHT;
     fileInputs >> max;          // Max greyscale value
 
-//   cout << IMAGE_WIDTH << " " << IMAGE_HEIGHT << " " << max << endl;
-    for (int i = 1; i <= 32 * 30; i++) {
-        fileInputs >> pixel;
-        cout << pixel << " ";
-        if (i %32 == 0 ) {
-            cout << endl;
-        }
+   cout << IMAGE_WIDTH << " " << IMAGE_HEIGHT << " " << max << endl;
+
+    for (int i = 0; i < 10; i++) {
+        getline(fileInputs,in);
+        cout << in << endl;
     }
+//    for (int i = 1; i <= 32 * 30; i++) {
+//        fileInputs >> pixel;
+//        cout << pixel << " ";
+//        if (i %32 == 0 ) {
+//            cout << endl;
+//        }
+//    }
 
 
 //    double pixelValues[IMAGE_HEIGHT * IMAGE_WIDTH];
